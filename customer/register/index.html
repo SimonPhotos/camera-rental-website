@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Create a Framehouse Rentals customer account.">
+	<title>Framehouse Rentals | Create Account</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/pages/account.css">
+</head>
+<body class="account-page">
+	<header class="account-header">
+		<a class="brand" href="../../index.html" aria-label="Framehouse Rentals home"><span class="brand__mark" aria-hidden="true">F</span><span><strong>FRAMEHOUSE</strong><small>RENTAL CO.</small></span></a>
+		<div class="language-switcher" role="group" aria-label="Language selector"><button type="button" class="language-switcher__button is-active" data-language="id" aria-pressed="true">ID</button><span aria-hidden="true">|</span><button type="button" class="language-switcher__button" data-language="en" aria-pressed="false">EN</button></div>
+	</header>
+
+	<main class="registration-shell">
+		<section class="registration-intro" aria-labelledby="registration-intro-title">
+			<div class="registration-intro__visual" aria-hidden="true"><span>PRODUCTION<br>READY</span><small>FRAMEHOUSE / MEMBER ACCESS</small></div>
+			<div class="registration-intro__copy"><p class="eyebrow">FRAMEHOUSE MEMBER ACCESS</p><h1 id="registration-intro-title">Create Account</h1><p>Create your account and start renting professional production equipment.</p><div class="registration-intro__rule"></div><span>Professional equipment.<br>Clearer production days.</span></div>
+		</section>
+
+		<section class="registration-card" aria-labelledby="registration-title">
+			<div class="registration-card__heading"><p class="eyebrow">GET STARTED</p><h2 id="registration-title">Create Account</h2><p>Register to save your equipment selections and request rentals.</p></div>
+			<form class="registration-form" data-registration-form novalidate>
+				<div class="form-section"><div class="form-section__heading"><span>01</span><h3>Account Information</h3></div>
+					<div class="form-grid">
+						<div class="field field--full"><label for="full-name">Full Name <span aria-hidden="true">*</span></label><input id="full-name" name="fullName" type="text" autocomplete="name" placeholder="Enter your full name" required><p class="field-error" data-error-for="fullName" role="alert"></p></div>
+						<div class="field"><label for="email">Email <span aria-hidden="true">*</span></label><input id="email" name="email" type="email" autocomplete="email" placeholder="name@email.com" required><p class="field-error" data-error-for="email" role="alert"></p></div>
+						<div class="field"><label for="whatsapp">WhatsApp Number <span aria-hidden="true">*</span></label><input id="whatsapp" name="whatsapp" type="tel" autocomplete="tel" inputmode="tel" placeholder="08xxxxxxxxxx" required><small class="field-helper">Used for rental confirmations and updates.</small><p class="field-error" data-error-for="whatsapp" role="alert"></p></div>
+						<div class="field"><label for="password">Password <span aria-hidden="true">*</span></label><div class="password-control"><input id="password" name="password" type="password" autocomplete="new-password" placeholder="Enter password" required><button type="button" class="password-toggle" data-password-toggle="password" aria-label="Show password">Show</button></div><ul class="password-requirements" data-password-requirements><li data-requirement="length">Minimum 8 characters</li><li data-requirement="uppercase">At least 1 uppercase letter</li><li data-requirement="lowercase">At least 1 lowercase letter</li><li data-requirement="number">At least 1 number</li></ul><p class="field-error" data-error-for="password" role="alert"></p></div>
+						<div class="field"><label for="confirm-password">Confirm Password <span aria-hidden="true">*</span></label><div class="password-control"><input id="confirm-password" name="confirmPassword" type="password" autocomplete="new-password" placeholder="Enter password again" required><button type="button" class="password-toggle" data-password-toggle="confirm-password" aria-label="Show confirm password">Show</button></div><p class="field-error" data-error-for="confirmPassword" role="alert"></p></div>
+					</div>
+				</div>
+
+				<div class="form-section"><div class="form-section__heading"><span>02</span><h3>Additional Information <small>Optional</small></h3></div>
+					<div class="form-grid"><div class="field"><label for="company">Company / Organization</label><input id="company" name="company" type="text" autocomplete="organization" placeholder="Company or organization name"></div><div class="field"><label for="city">City / Location</label><input id="city" name="city" type="text" autocomplete="address-level2" placeholder="Example: Jakarta"></div></div>
+				</div>
+
+				<div class="terms-field"><label><input id="terms" name="terms" type="checkbox" required><span>I agree to the Terms &amp; Conditions and Privacy Policy.</span></label><p class="field-error" data-error-for="terms" role="alert"></p></div>
+				<button class="button button--primary registration-submit" type="submit">Register <span>→</span></button>
+			</form>
+			<div class="registration-success" data-registration-success hidden role="status"><span class="registration-success__icon" aria-hidden="true">✓</span><p class="eyebrow">FRAMEHOUSE MEMBER ACCESS</p><h2>Registration successful!</h2><p>Welcome. Your demo account has been created successfully.</p><a class="button button--primary" href="../../index.html">Back to Home <span>→</span></a></div>
+			<p class="account-switch">Already have an account? <a href="../login.html">Login</a></p>
+		</section>
+	</main>
+	<script src="../../js/i18n.js"></script>
+	<script src="../../js/auth/auth.js"></script>
+</body>
+</html>

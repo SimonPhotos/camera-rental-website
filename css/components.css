@@ -1,0 +1,25 @@
+.image-placeholder { align-items: center; background: linear-gradient(135deg, #dce7ed 0%, #9fb4c2 100%); color: rgba(7, 19, 31, .62); display: flex; justify-content: center; overflow: hidden; position: relative; }
+.image-placeholder::before, .image-placeholder::after { border: 1px solid rgba(255,255,255,.45); content: ""; position: absolute; transform: rotate(-28deg); }
+.image-placeholder::before { height: 180%; left: 20%; width: 1px; }
+.image-placeholder::after { height: 1px; left: -20%; top: 50%; width: 140%; }
+.image-placeholder span { font-size: .7rem; font-weight: 800; letter-spacing: .16em; position: relative; z-index: 1; }
+.image-placeholder small { bottom: 15px; font-size: .55rem; letter-spacing: .12em; position: absolute; right: 16px; }
+.category-card, .product-card, .service-card { transition: box-shadow var(--ease), transform var(--ease); }
+.category-card:hover, .product-card:hover, .service-card:hover { box-shadow: 0 16px 35px rgba(7,19,31,.1); transform: translateY(-5px); }
+.category-card__visual { height: 210px; }
+.category-card__body { background: var(--white); min-height: 190px; padding: 22px 24px 25px; position: relative; }
+.category-card__body h3 { margin: 8px 0 10px; }
+.category-card__body p { color: var(--gray-500); font-size: .83rem; margin-bottom: 20px; max-width: 210px; }
+.card-number, .product-card__category, .service-card > span { color: var(--blue-600); font-size: .62rem; font-weight: 700; letter-spacing: .13em; }
+.product-card { background: var(--white); }
+.product-card__visual { height: 230px; }
+.product-card__body { padding: 22px 20px 20px; }
+.product-card__body h3 { font-size: 1.05rem; margin: 9px 0 20px; min-height: 36px; }
+.product-card__meta { align-items: end; border-bottom: 1px solid var(--line-light); display: flex; justify-content: space-between; padding-bottom: 18px; }
+.product-card__meta strong { font-size: .85rem; }
+.product-card__meta small { color: var(--gray-500); font-size: .65rem; font-weight: 400; }
+.availability { color: var(--gray-500); font-size: .62rem; }
+.availability i { background: #41a66a; border-radius: 50%; display: inline-block; height: 6px; margin-right: 4px; width: 6px; }
+.product-card__actions { align-items: center; display: flex; justify-content: space-between; padding-top: 16px; }
+.wishlist-button { background: var(--white); color: var(--navy-900); font-size: 1.4rem; height: 34px; position: absolute; right: 12px; top: 12px; transition: color var(--ease); width: 34px; z-index: 2; }
+.wishlist-button:hover { color: var(--blue-500); }

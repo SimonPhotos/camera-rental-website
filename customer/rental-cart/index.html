@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Peralatan kamera dan produksi yang Anda pilih untuk disewa - Framehouse Rentals.">
+	<title>Framehouse Rentals | Daftar Rental</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/components.css">
+	<link rel="stylesheet" href="../../css/pages/rental-cart.css">
+	<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body class="cart-page">
+	<a class="skip-link" href="#cart-content">Skip to content</a>
+	<div class="topbar">
+		<div class="container topbar__inner">
+			<span>WhatsApp: +62 XXX XXXX XXXX</span>
+			<span class="topbar__item">Email: info@example.com</span>
+			<span class="topbar__item">Mon - Sat: 08.00 - 20.00</span>
+		</div>
+	</div>
+
+	<header class="site-header">
+		<div class="container header-main">
+			<a class="brand" href="../../index.html" aria-label="Framehouse Rentals home">
+				<span class="brand__mark" aria-hidden="true">F</span>
+				<span><strong>FRAMEHOUSE</strong><small>RENTAL CO.</small></span>
+			</a>
+			<form class="search-form" role="search" data-search-form data-search-target="../../pages/search/index.html">
+				<label class="sr-only" for="site-search">Search equipment</label>
+				<input id="site-search" type="search" placeholder="Search cameras, lenses, lighting..." autocomplete="off">
+				<button type="submit" aria-label="Search equipment"><span aria-hidden="true">⌕</span></button>
+			</form>
+			<div class="header-actions">
+				<a class="header-action" href="../dashboard.html"><span class="header-action__icon" aria-hidden="true">◎</span><span>Account<small>Dashboard</small></span></a>
+				<a class="header-action header-action--cart" href="index.html"><span class="header-action__icon" aria-hidden="true">□</span><span>Rental List<small>0 items</small></span></a>
+			</div>
+			<div class="language-switcher" role="group" aria-label="Language selector">
+				<button type="button" class="language-switcher__button is-active" data-language="id" aria-pressed="true">ID</button><span aria-hidden="true">|</span><button type="button" class="language-switcher__button" data-language="en" aria-pressed="false">EN</button>
+			</div>
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
+		</div>
+		<nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+			<div class="container main-nav__inner">
+				<a class="main-nav__link" href="../../index.html">Home</a>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Camera <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Camera Types</p><a href="../../products/camera/index.html">Mirrorless Camera</a><a href="../../products/camera/index.html">Cinema Camera</a><a href="../../products/camera/index.html">Action Camera</a><a href="../../products/camera/index.html">Camcorder</a></div><div><p class="mega-menu__title">Browse Brands</p><a href="../../products/camera/index.html">Sony</a><a href="../../products/camera/index.html">Canon</a><a href="../../products/camera/index.html">Nikon</a><a href="../../products/camera/index.html">Fujifilm</a><a href="../../products/camera/index.html">Panasonic</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Lens <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Lens Types</p><a href="../../products/lens/index.html">Wide Angle</a><a href="../../products/lens/index.html">Standard</a><a href="../../products/lens/index.html">Telephoto</a><a href="../../products/lens/index.html">Prime</a><a href="../../products/lens/index.html">Zoom</a></div><div><p class="mega-menu__title">Mounts</p><a href="../../products/lens/index.html">Sony E-Mount</a><a href="../../products/lens/index.html">Canon RF</a><a href="../../products/lens/index.html">Canon EF</a><a href="../../products/lens/index.html">Nikon Z</a><a href="../../products/lens/index.html">Fujifilm X</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Lighting <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Lighting</p><a href="../../products/lighting/index.html">LED Light</a><a href="../../products/lighting/index.html">Studio Light</a><a href="../../products/lighting/index.html">Flash</a><a href="../../products/lighting/index.html">Softbox</a><a href="../../products/lighting/index.html">Light Stand</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Audio <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Audio</p><a href="../../products/audio/index.html">Wireless Microphone</a><a href="../../products/audio/index.html">Shotgun Microphone</a><a href="../../products/audio/index.html">Audio Recorder</a><a href="../../products/audio/index.html">Headphone</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Monitor &amp; Wireless <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Monitor &amp; Wireless</p><a href="../../products/monitor-wireless/index.html">Camera Monitor</a><a href="../../products/monitor-wireless/index.html">Wireless Monitor</a><a href="../../products/monitor-wireless/index.html">Video Transmitter</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Support &amp; Accessories <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Support &amp; Accessories</p><a href="../../products/support-accessories/index.html">Tripod</a><a href="../../products/support-accessories/index.html">Gimbal</a><a href="../../products/support-accessories/index.html">Camera Cage</a><a href="../../products/support-accessories/index.html">Battery</a><a href="../../products/support-accessories/index.html">Memory Card</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Services <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Production Services</p><a href="../../pages/services/index.html">Camera Rental</a><a href="../../pages/services/index.html">Production Equipment Rental</a><a href="../../pages/services/index.html">Event Documentation</a><a href="../../pages/services/index.html">Corporate Production</a><a href="../../pages/services/index.html">Film &amp; Commercial Production</a></div></div></div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="cart-main" id="cart-content">
+		<div class="container">
+			<header class="cart-header">
+				<p class="eyebrow">CUSTOMER AREA / RENTAL CART</p>
+				<h1 data-i18n="cart_title">Daftar Rental</h1>
+				<p data-i18n="cart_subtitle">Peralatan yang Anda pilih untuk disewa</p>
+			</header>
+
+			<!-- Empty State -->
+			<div class="cart-empty-state" id="cart-empty" hidden>
+				<div class="cart-empty-state__icon" aria-hidden="true">□</div>
+				<h2 data-i18n="cart_empty_title">Daftar rental Anda masih kosong.</h2>
+				<p data-i18n="cart_empty_desc">Temukan peralatan yang sesuai untuk kebutuhan Anda.</p>
+				<a class="button button--primary" href="../../products/index.html" data-i18n="cart_browse_btn">Lihat Peralatan <span>→</span></a>
+			</div>
+
+			<!-- Cart Layout -->
+			<div class="cart-layout" id="cart-content-wrapper">
+				<div class="cart-items-container">
+					<!-- Equipment List Card -->
+					<section class="cart-card">
+						<div class="cart-card__header">
+							<h2 data-i18n="selected_equipment_title">Peralatan Terpilih</h2>
+							<span class="text-link" id="cart-items-count">0 Equipment</span>
+						</div>
+						<div class="cart-list" id="cart-items-list" aria-label="Selected equipment list">
+							<!-- Dynamic cart items rendered here -->
+						</div>
+					</section>
+
+					<!-- Rental Period Card -->
+					<section class="cart-card">
+						<div class="cart-card__header">
+							<h3 data-i18n="rental_period_title">Periode Rental</h3>
+						</div>
+						<div class="form-group-row">
+							<div class="form-field">
+								<label for="rental-start-date" data-i18n="start_date_label">Tanggal Mulai Rental</label>
+								<input id="rental-start-date" type="date" required>
+							</div>
+							<div class="form-field">
+								<label for="rental-return-date" data-i18n="return_date_label">Tanggal Pengembalian</label>
+								<input id="rental-return-date" type="date" required>
+							</div>
+						</div>
+						<p class="field-error-msg" id="date-error" data-i18n="date_error_msg">Tanggal pengembalian harus setelah tanggal mulai rental.</p>
+						<div class="duration-badge" id="duration-badge">
+							<span>⏱</span> <strong id="duration-text">4 hari</strong>
+						</div>
+					</section>
+
+					<!-- Fulfillment Method Card -->
+					<section class="cart-card">
+						<div class="cart-card__header">
+							<h3 data-i18n="fulfillment_title">Metode Pengambilan</h3>
+						</div>
+						<div class="fulfillment-options" role="radiogroup" aria-label="Metode Pengambilan">
+							<label class="radio-card is-selected" id="radio-card-pickup">
+								<input type="radio" name="fulfillment" value="pickup" checked>
+								<div>
+									<strong data-i18n="fulfillment_pickup">Pickup di Lokasi</strong>
+									<small data-i18n="fulfillment_pickup_desc">Ambil langsung di kantor operasional</small>
+								</div>
+							</label>
+							<label class="radio-card" id="radio-card-delivery">
+								<input type="radio" name="fulfillment" value="delivery">
+								<div>
+									<strong data-i18n="fulfillment_delivery">Delivery</strong>
+									<small data-i18n="fulfillment_delivery_desc">Pengantaran aman ke lokasi produksi</small>
+								</div>
+							</label>
+						</div>
+						<div class="fulfillment-notice" id="pickup-notice">
+							<p data-i18n="pickup_notice_text">Alamat pickup akan diberikan setelah rental dikonfirmasi.</p>
+						</div>
+						<div class="form-field" id="delivery-address-group" style="display:none; margin-top:14px;">
+							<label for="delivery-address" data-i18n="delivery_address_label">Alamat Pengiriman</label>
+							<textarea id="delivery-address" placeholder="Masukkan alamat lengkap lokasi produksi atau studio..."></textarea>
+							<p class="field-error-msg" id="delivery-error" data-i18n="delivery_error_msg">Alamat pengiriman wajib diisi untuk metode Delivery.</p>
+						</div>
+					</section>
+
+					<!-- Customer Notes Card -->
+					<section class="cart-card">
+						<div class="cart-card__header">
+							<h3 data-i18n="notes_title">Catatan Rental</h3>
+						</div>
+						<div class="form-field">
+							<textarea id="rental-notes" placeholder="Contoh: Saya membutuhkan equipment untuk produksi video corporate."></textarea>
+						</div>
+					</section>
+				</div>
+
+				<!-- Summary Card (Sticky) -->
+				<aside class="cart-summary-sidebar">
+					<div class="cart-summary-card">
+						<h3 data-i18n="summary_title">Ringkasan Rental</h3>
+						<dl class="summary-rows">
+							<div class="summary-row">
+								<dt data-i18n="summary_total_equipment">Jumlah Equipment</dt>
+								<dd id="summary-equipment-count">0 Unit</dd>
+							</div>
+							<div class="summary-row">
+								<dt data-i18n="summary_duration">Durasi Rental</dt>
+								<dd id="summary-duration-text">4 hari</dd>
+							</div>
+							<div class="summary-row">
+								<dt data-i18n="summary_subtotal">Subtotal</dt>
+								<dd id="summary-subtotal">Rp0</dd>
+							</div>
+							<div class="summary-row">
+								<dt data-i18n="summary_fulfillment">Metode</dt>
+								<dd id="summary-fulfillment-text">Pickup di Lokasi</dd>
+							</div>
+							<div class="summary-row summary-row--total">
+								<dt data-i18n="summary_estimated_total">Estimated Total</dt>
+								<dd id="summary-estimated-total">Rp0</dd>
+							</div>
+						</dl>
+						<button class="button button--primary checkout-btn" id="continue-request-btn" type="button">
+							<span data-i18n="continue_request_btn">Lanjutkan Pengajuan Rental</span> <span>→</span>
+						</button>
+						<p class="summary-helper-note" data-i18n="summary_demo_note">Pemesanan ini merupakan pengajuan rental demo dan belum memerlukan pembayaran langsung.</p>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-main">
+			<div class="footer-brand">
+				<a class="brand brand--footer" href="../../index.html">
+					<span class="brand__mark" aria-hidden="true">F</span>
+					<span><strong>FRAMEHOUSE</strong><small>RENTAL CO.</small></span>
+				</a>
+				<p>Professional equipment for every story.</p>
+			</div>
+			<div class="footer-column">
+				<h3>Company</h3>
+				<a href="../../pages/about/index.html">About Us</a>
+				<a href="../../pages/services/index.html">Services</a>
+				<a href="../../pages/portfolio/index.html">Portfolio</a>
+				<a href="../../pages/contact/index.html">Contact</a>
+			</div>
+			<div class="footer-column">
+				<h3>Equipment</h3>
+				<a href="../../products/camera/index.html">Camera</a>
+				<a href="../../products/lens/index.html">Lens</a>
+				<a href="../../products/lighting/index.html">Lighting</a>
+				<a href="../../products/audio/index.html">Audio</a>
+				<a href="../../products/monitor-wireless/index.html">Monitor &amp; Wireless</a>
+				<a href="../../products/support-accessories/index.html">Accessories</a>
+			</div>
+			<div class="footer-column">
+				<h3>Customer</h3>
+				<a href="../login.html">Login</a>
+				<a href="../register/index.html">Register</a>
+				<a href="index.html">Rental List</a>
+				<a href="../rental-history.html">Rental History</a>
+				<a href="../../pages/faq/index.html">FAQ</a>
+			</div>
+			<div class="footer-column footer-contact">
+				<h3>Contact</h3>
+				<p>WhatsApp: +62 XXX XXXX XXXX</p>
+				<p>info@example.com</p>
+				<p>Jakarta, Indonesia</p>
+			</div>
+		</div>
+		<div class="container footer-bottom">
+			<span>© 2026 Framehouse Rental Co. Demo website.</span>
+			<span>All rights reserved.</span>
+		</div>
+	</footer>
+
+	<!-- Rental Assistant Chatbot -->
+	<div class="chatbot" data-chatbot>
+		<button class="chatbot__launcher" type="button" data-chat-toggle aria-expanded="false" aria-controls="rental-chat">
+			<span class="chatbot__launcher-icon" aria-hidden="true">⌁</span>
+			<span class="chatbot__launcher-label">Chat with us</span>
+		</button>
+		<section class="chat-window" id="rental-chat" aria-label="Rental Assistant" hidden>
+			<header class="chat-window__header">
+				<span class="chat-avatar" aria-hidden="true">F</span>
+				<div><strong>Rental Assistant</strong><small>Online · Ready to help</small></div>
+				<button type="button" class="chat-window__close" data-chat-close aria-label="Close chat">×</button>
+			</header>
+			<div class="chat-window__messages" data-chat-messages aria-live="polite"></div>
+			<div class="chat-window__quick" data-chat-quick aria-label="Quick suggestions"></div>
+			<form class="chat-window__form" data-chat-form>
+				<label class="sr-only" for="chat-message">Type a message</label>
+				<input id="chat-message" type="text" data-chat-input autocomplete="off" placeholder="Type a message...">
+				<button type="submit" aria-label="Send message">↑</button>
+			</form>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../js/navigation.js"></script>
+	<script src="../../js/search.js"></script>
+	<script src="../../js/i18n.js"></script>
+	<script src="../../js/chatbot.js"></script>
+	<script src="../../js/products/product-data.js"></script>
+	<script src="../../js/auth/auth.js"></script>
+	<script src="../../js/customer/cart.js"></script>
+
+	<!-- Rental Cart Interactive Script -->
+	<script>
+		(() => {
+			const emptyState = document.getElementById('cart-empty');
+			const contentWrapper = document.getElementById('cart-content-wrapper');
+			const itemsList = document.getElementById('cart-items-list');
+			const itemsCountLabel = document.getElementById('cart-items-count');
+
+			const startDateInput = document.getElementById('rental-start-date');
+			const returnDateInput = document.getElementById('rental-return-date');
+			const dateError = document.getElementById('date-error');
+			const durationBadgeText = document.getElementById('duration-text');
+
+			const radioPickup = document.getElementById('radio-card-pickup');
+			const radioDelivery = document.getElementById('radio-card-delivery');
+			const pickupNotice = document.getElementById('pickup-notice');
+			const deliveryGroup = document.getElementById('delivery-address-group');
+			const deliveryAddressInput = document.getElementById('delivery-address');
+			const deliveryError = document.getElementById('delivery-error');
+			const notesInput = document.getElementById('rental-notes');
+
+			const summaryEquipmentCount = document.getElementById('summary-equipment-count');
+			const summaryDurationText = document.getElementById('summary-duration-text');
+			const summarySubtotal = document.getElementById('summary-subtotal');
+			const summaryFulfillment = document.getElementById('summary-fulfillment-text');
+			const summaryEstimatedTotal = document.getElementById('summary-estimated-total');
+			const continueBtn = document.getElementById('continue-request-btn');
+
+			function lang() {
+				return window.siteLanguage || localStorage.getItem('framehouse-language') || 'id';
+			}
+
+			function formatRupiah(num) {
+				return 'Rp' + Math.round(Number(num) || 0).toLocaleString('id-ID');
+			}
+
+			// Initialize default dates: today and today + 3 (4 calendar days)
+			function initDates() {
+				const now = new Date();
+				const todayStr = now.toISOString().split('T')[0];
+				const returnObj = new Date(now);
+				returnObj.setDate(returnObj.getDate() + 3);
+				const returnStr = returnObj.toISOString().split('T')[0];
+
+				// Read any existing dates from first cart item or session
+				const cart = window.CameraCart ? window.CameraCart.getCart() : [];
+				const savedStart = (cart[0] && cart[0].rentalStart) || todayStr;
+				const savedEnd = (cart[0] && cart[0].rentalEnd) || returnStr;
+
+				startDateInput.value = savedStart;
+				startDateInput.min = todayStr;
+				returnDateInput.value = savedEnd;
+				returnDateInput.min = savedStart;
+			}
+
+			function calculateDurationDays() {
+				const startVal = startDateInput.value;
+				const endVal = returnDateInput.value;
+				if (!startVal || !endVal) return 0;
+
+				const start = new Date(startVal + 'T00:00:00');
+				const end = new Date(endVal + 'T00:00:00');
+
+				if (end < start) {
+					return -1;
+				}
+
+				const diffTime = end.getTime() - start.getTime();
+				const diffDays = Math.round(diffTime / (1000 * 60 * 60 * 24)) + 1;
+				return diffDays > 0 ? diffDays : 1;
+			}
+
+			function renderCart() {
+				const cart = window.CameraCart ? window.CameraCart.getCart() : [];
+				const isEn = lang() === 'en';
+
+				if (cart.length === 0) {
+					emptyState.hidden = false;
+					contentWrapper.style.display = 'none';
+					return;
+				}
+
+				emptyState.hidden = true;
+				contentWrapper.style.display = 'grid';
+
+				const durationDays = calculateDurationDays();
+				const isDateValid = durationDays > 0;
+
+				// Date validation UI
+				if (!isDateValid) {
+					dateError.classList.add('is-visible');
+					continueBtn.disabled = true;
+				} else {
+					dateError.classList.remove('is-visible');
+					continueBtn.disabled = false;
+				}
+
+				const durText = durationDays > 0
+					? `${durationDays} ${isEn ? (durationDays === 1 ? 'day' : 'days') : 'hari'}`
+					: (isEn ? 'Invalid period' : 'Periode tidak valid');
+
+				durationBadgeText.textContent = durText;
+				summaryDurationText.textContent = durText;
+
+				itemsList.innerHTML = '';
+				let totalQuantity = 0;
+				let calculatedTotal = 0;
+
+				cart.forEach((item) => {
+					totalQuantity += item.quantity;
+					const itemDays = durationDays > 0 ? durationDays : 1;
+					const itemSubtotal = item.dailyPrice * item.quantity * itemDays;
+					calculatedTotal += itemSubtotal;
+
+					const product = window.CameraProducts ? window.CameraProducts.getById(item.productId) : null;
+					const maxStock = product ? product.available : 99;
+
+					const itemEl = document.createElement('article');
+					itemEl.className = 'cart-item';
+					itemEl.innerHTML = `
+						<div class="cart-item__visual image-placeholder">
+							<span>${item.image || 'GEAR'}</span>
+						</div>
+						<div class="cart-item__info">
+							<span class="product-card__category">${item.category} / ${item.brand}</span>
+							<h4>${item.name}</h4>
+							<p class="cart-item__meta">${isEn ? 'Stock available:' : 'Tersedia:'} ${maxStock} ${isEn ? 'units' : 'unit'}</p>
+							<div class="cart-item__price">${formatRupiah(item.dailyPrice)} <small>/ ${isEn ? 'day' : 'hari'}</small></div>
+						</div>
+						<div class="cart-item__qty">
+							<button class="qty-btn" type="button" data-qty-action="decrease" data-id="${item.productId}" aria-label="Decrease quantity" ${item.quantity <= 1 ? 'disabled' : ''}>−</button>
+							<span class="qty-val">${item.quantity}</span>
+							<button class="qty-btn" type="button" data-qty-action="increase" data-id="${item.productId}" aria-label="Increase quantity" ${item.quantity >= maxStock ? 'disabled' : ''}>+</button>
+						</div>
+						<div class="cart-item__subtotal">
+							<strong>${formatRupiah(itemSubtotal)}</strong>
+							<small>${formatRupiah(item.dailyPrice)} × ${item.quantity} × ${itemDays} ${isEn ? 'd' : 'h'}</small>
+							<button class="cart-item__remove" type="button" data-remove-id="${item.productId}">${isEn ? 'Remove' : 'Hapus'}</button>
+						</div>
+					`;
+					itemsList.appendChild(itemEl);
+				});
+
+				itemsCountLabel.textContent = `${cart.length} ${isEn ? 'Equipment' : 'Peralatan'}`;
+				summaryEquipmentCount.textContent = `${totalQuantity} ${isEn ? 'Units' : 'Unit'}`;
+				summarySubtotal.textContent = formatRupiah(calculatedTotal);
+				summaryEstimatedTotal.textContent = formatRupiah(calculatedTotal);
+
+				// Attach event listeners for quantity buttons and remove buttons
+				itemsList.querySelectorAll('[data-qty-action]').forEach((btn) => {
+					btn.addEventListener('click', (e) => {
+						const id = btn.dataset.id;
+						const action = btn.dataset.qtyAction;
+						if (action === 'increase') {
+							window.CameraCart.updateQuantity(id, 1);
+						} else {
+							window.CameraCart.updateQuantity(id, -1);
+						}
+						renderCart();
+					});
+				});
+
+				itemsList.querySelectorAll('[data-remove-id]').forEach((btn) => {
+					btn.addEventListener('click', (e) => {
+						const id = btn.dataset.removeId;
+						window.CameraCart.removeItem(id);
+						renderCart();
+					});
+				});
+			}
+
+			// Date change events
+			startDateInput.addEventListener('change', () => {
+				returnDateInput.min = startDateInput.value;
+				if (returnDateInput.value < startDateInput.value) {
+					returnDateInput.value = startDateInput.value;
+				}
+				// Sync to cart items
+				const cart = window.CameraCart.getCart();
+				cart.forEach((i) => {
+					i.rentalStart = startDateInput.value;
+					i.rentalEnd = returnDateInput.value;
+				});
+				window.CameraCart.saveCart(cart);
+				renderCart();
+			});
+
+			returnDateInput.addEventListener('change', () => {
+				const cart = window.CameraCart.getCart();
+				cart.forEach((i) => {
+					i.rentalStart = startDateInput.value;
+					i.rentalEnd = returnDateInput.value;
+				});
+				window.CameraCart.saveCart(cart);
+				renderCart();
+			});
+
+			// Fulfillment toggle
+			const fulfillmentRadios = document.querySelectorAll('input[name="fulfillment"]');
+			fulfillmentRadios.forEach((radio) => {
+				radio.addEventListener('change', () => {
+					const isPickup = radio.value === 'pickup';
+					radioPickup.classList.toggle('is-selected', isPickup);
+					radioDelivery.classList.toggle('is-selected', !isPickup);
+					pickupNotice.style.display = isPickup ? 'block' : 'none';
+					deliveryGroup.style.display = isPickup ? 'none' : 'block';
+					summaryFulfillment.textContent = isPickup
+						? (lang() === 'en' ? 'Pickup at Location' : 'Pickup di Lokasi')
+						: (lang() === 'en' ? 'Delivery' : 'Delivery');
+				});
+			});
+
+			// Continue to Rental Request
+			continueBtn.addEventListener('click', () => {
+				const cart = window.CameraCart.getCart();
+				if (cart.length === 0) {
+					window.CameraCart.showToast(lang() === 'en' ? 'Your cart is empty.' : 'Daftar rental Anda masih kosong.', true);
+					return;
+				}
+
+				const durationDays = calculateDurationDays();
+				if (durationDays < 1) {
+					dateError.classList.add('is-visible');
+					window.CameraCart.showToast(lang() === 'en' ? 'Return date must be after rental start date.' : 'Tanggal pengembalian harus setelah tanggal mulai rental.', true);
+					return;
+				}
+
+				const isDelivery = document.querySelector('input[name="fulfillment"]:checked').value === 'delivery';
+				const deliveryAddr = deliveryAddressInput.value.trim();
+
+				if (isDelivery && !deliveryAddr) {
+					deliveryError.classList.add('is-visible');
+					deliveryAddressInput.focus();
+					return;
+				} else {
+					deliveryError.classList.remove('is-visible');
+				}
+
+				// Store checkout details for Rental Request page
+				const checkoutDetails = {
+					rentalStart: startDateInput.value,
+					rentalEnd: returnDateInput.value,
+					durationDays: durationDays,
+					fulfillmentMethod: isDelivery ? 'Delivery' : 'Pickup di Lokasi',
+					deliveryAddress: isDelivery ? deliveryAddr : '',
+					notes: notesInput.value.trim()
+				};
+
+				sessionStorage.setItem('pendingRentalDetails', JSON.stringify(checkoutDetails));
+
+				// Navigate to Rental Request page
+				window.location.href = '../rental-request/index.html';
+			});
+
+			// Re-render when language changes
+			document.addEventListener('languagechange', () => {
+				const isDelivery = document.querySelector('input[name="fulfillment"]:checked')?.value === 'delivery';
+				summaryFulfillment.textContent = isDelivery
+					? (lang() === 'en' ? 'Delivery' : 'Delivery')
+					: (lang() === 'en' ? 'Pickup at Location' : 'Pickup di Lokasi');
+				renderCart();
+			});
+
+			// Listen for external cart changes
+			document.addEventListener('cartupdated', () => {
+				renderCart();
+			});
+
+			initDates();
+			renderCart();
+		})();
+	</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Sign in to your Framehouse Rentals customer account.">
+	<title>Framehouse Rentals | Customer Login</title>
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/variables.css">
+	<link rel="stylesheet" href="../css/base.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/pages/account.css">
+</head>
+<body class="account-page login-page">
+	<header class="account-header">
+		<a class="brand" href="../index.html" aria-label="Framehouse Rentals home"><span class="brand__mark" aria-hidden="true">F</span><span><strong>FRAMEHOUSE</strong><small>RENTAL CO.</small></span></a>
+		<div class="language-switcher" role="group" aria-label="Language selector"><button type="button" class="language-switcher__button is-active" data-language="id" aria-pressed="true">ID</button><span aria-hidden="true">|</span><button type="button" class="language-switcher__button" data-language="en" aria-pressed="false">EN</button></div>
+	</header>
+
+	<main class="login-shell">
+		<section class="login-intro" aria-labelledby="login-intro-title">
+			<div class="login-intro__visual" aria-hidden="true"><span>PRODUCTION<br>READY</span><small>FRAMEHOUSE / CUSTOMER ACCESS</small></div>
+			<div class="login-intro__copy"><p class="eyebrow">CUSTOMER ACCESS</p><h1 id="login-intro-title">Login</h1><p>Access your account, rental information, wishlist and production plans.</p><div class="login-intro__rule"></div><span>Professional Equipment.<br>Professional Production.</span></div>
+		</section>
+
+		<section class="login-card" aria-labelledby="login-title">
+			<div class="login-card__heading"><p class="eyebrow">SECURE DEMO ACCESS</p><h2 id="login-title">Login</h2><p>Sign in to manage your account and rental information.</p></div>
+			<form class="login-form" data-login-form novalidate>
+				<div class="field"><label for="login-email">Email <span aria-hidden="true">*</span></label><input id="login-email" name="email" type="email" autocomplete="email" placeholder="name@email.com" required><p class="field-error" data-error-for="login-email" role="alert"></p></div>
+				<div class="field"><label for="login-password">Password <span aria-hidden="true">*</span></label><div class="password-control"><input id="login-password" name="password" type="password" autocomplete="current-password" placeholder="Enter password" required><button type="button" class="password-toggle" data-login-password-toggle aria-label="Show password">Show</button></div><p class="field-error" data-error-for="login-password" role="alert"></p></div>
+				<div class="login-options"><label><input type="checkbox" name="remember"><span>Remember me</span></label><a href="#forgot-password" data-forgot-password>Forgot password?</a></div>
+				<p class="login-notice" data-login-notice role="status"></p>
+				<button class="button button--primary login-submit" type="submit">Login <span>→</span></button>
+			</form>
+			<div class="login-success" data-login-success hidden role="status"><span class="registration-success__icon" aria-hidden="true">✓</span><p class="eyebrow">SECURE DEMO ACCESS</p><h2>Login successful.</h2><p>Welcome back.</p><a class="button button--primary" href="dashboard.html">Continue to Demo Dashboard <span>→</span></a></div>
+			<p class="account-switch login-account-switch">Don't have an account? <a href="register/index.html">Create Account</a></p>
+			<p class="demo-note">Frontend demo only. No real authentication is connected.</p>
+		</section>
+	</main>
+
+	<div class="chatbot" data-chatbot>
+		<button class="chatbot__launcher" type="button" data-chat-toggle aria-expanded="false" aria-controls="rental-chat"><span class="chatbot__launcher-icon" aria-hidden="true">⌁</span><span class="chatbot__launcher-label">Chat with us</span></button>
+		<section class="chat-window" id="rental-chat" aria-label="Rental Assistant" hidden>
+			<header class="chat-window__header"><span class="chat-avatar" aria-hidden="true">F</span><div><strong>Rental Assistant</strong><small>Online · Ready to help</small></div><button type="button" class="chat-window__close" data-chat-close aria-label="Close chat">×</button></header>
+			<div class="chat-window__messages" data-chat-messages aria-live="polite"></div>
+			<div class="chat-window__quick" data-chat-quick aria-label="Quick suggestions"></div>
+			<form class="chat-window__form" data-chat-form><label class="sr-only" for="chat-message">Type a message</label><input id="chat-message" type="text" data-chat-input autocomplete="off" placeholder="Type a message..."><button type="submit" aria-label="Send message">↑</button></form>
+		</section>
+	</div>
+	<script src="../js/i18n.js"></script>
+	<script src="../js/chatbot.js"></script>
+	<script src="../js/auth/auth.js"></script>
+</body>
+</html>

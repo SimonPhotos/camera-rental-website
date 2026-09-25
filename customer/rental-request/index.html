@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Konfirmasi Pengajuan Rental Peralatan Kamera - Framehouse Rentals.">
+	<title>Framehouse Rentals | Pengajuan Rental</title>
+	<link rel="stylesheet" href="../../css/reset.css">
+	<link rel="stylesheet" href="../../css/variables.css">
+	<link rel="stylesheet" href="../../css/base.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+	<link rel="stylesheet" href="../../css/components.css">
+	<link rel="stylesheet" href="../../css/pages/rental-cart.css">
+	<link rel="stylesheet" href="../../css/responsive.css">
+</head>
+<body class="rental-request-page">
+	<a class="skip-link" href="#request-content">Skip to content</a>
+	<div class="topbar">
+		<div class="container topbar__inner">
+			<span>WhatsApp: +62 XXX XXXX XXXX</span>
+			<span class="topbar__item">Email: info@example.com</span>
+			<span class="topbar__item">Mon - Sat: 08.00 - 20.00</span>
+		</div>
+	</div>
+
+	<header class="site-header">
+		<div class="container header-main">
+			<a class="brand" href="../../index.html" aria-label="Framehouse Rentals home">
+				<span class="brand__mark" aria-hidden="true">F</span>
+				<span><strong>FRAMEHOUSE</strong><small>RENTAL CO.</small></span>
+			</a>
+			<form class="search-form" role="search" data-search-form data-search-target="../../pages/search/index.html">
+				<label class="sr-only" for="site-search">Search equipment</label>
+				<input id="site-search" type="search" placeholder="Search cameras, lenses, lighting..." autocomplete="off">
+				<button type="submit" aria-label="Search equipment"><span aria-hidden="true">⌕</span></button>
+			</form>
+			<div class="header-actions">
+				<a class="header-action" href="../dashboard.html"><span class="header-action__icon" aria-hidden="true">◎</span><span>Account<small>Dashboard</small></span></a>
+				<a class="header-action header-action--cart" href="../rental-cart/index.html"><span class="header-action__icon" aria-hidden="true">□</span><span>Rental List<small>0 items</small></span></a>
+			</div>
+			<div class="language-switcher" role="group" aria-label="Language selector">
+				<button type="button" class="language-switcher__button is-active" data-language="id" aria-pressed="true">ID</button><span aria-hidden="true">|</span><button type="button" class="language-switcher__button" data-language="en" aria-pressed="false">EN</button>
+			</div>
+			<button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-navigation"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
+		</div>
+		<nav class="main-nav" id="main-navigation" aria-label="Main navigation">
+			<div class="container main-nav__inner">
+				<a class="main-nav__link" href="../../index.html">Home</a>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Camera <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Camera Types</p><a href="../../products/camera/index.html">Mirrorless Camera</a><a href="../../products/camera/index.html">Cinema Camera</a><a href="../../products/camera/index.html">Action Camera</a><a href="../../products/camera/index.html">Camcorder</a></div><div><p class="mega-menu__title">Browse Brands</p><a href="../../products/camera/index.html">Sony</a><a href="../../products/camera/index.html">Canon</a><a href="../../products/camera/index.html">Nikon</a><a href="../../products/camera/index.html">Fujifilm</a><a href="../../products/camera/index.html">Panasonic</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Lens <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Lens Types</p><a href="../../products/lens/index.html">Wide Angle</a><a href="../../products/lens/index.html">Standard</a><a href="../../products/lens/index.html">Telephoto</a><a href="../../products/lens/index.html">Prime</a><a href="../../products/lens/index.html">Zoom</a></div><div><p class="mega-menu__title">Mounts</p><a href="../../products/lens/index.html">Sony E-Mount</a><a href="../../products/lens/index.html">Canon RF</a><a href="../../products/lens/index.html">Canon EF</a><a href="../../products/lens/index.html">Nikon Z</a><a href="../../products/lens/index.html">Fujifilm X</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Lighting <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Lighting</p><a href="../../products/lighting/index.html">LED Light</a><a href="../../products/lighting/index.html">Studio Light</a><a href="../../products/lighting/index.html">Flash</a><a href="../../products/lighting/index.html">Softbox</a><a href="../../products/lighting/index.html">Light Stand</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Audio <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Audio</p><a href="../../products/audio/index.html">Wireless Microphone</a><a href="../../products/audio/index.html">Shotgun Microphone</a><a href="../../products/audio/index.html">Audio Recorder</a><a href="../../products/audio/index.html">Headphone</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Monitor &amp; Wireless <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Monitor &amp; Wireless</p><a href="../../products/monitor-wireless/index.html">Camera Monitor</a><a href="../../products/monitor-wireless/index.html">Wireless Monitor</a><a href="../../products/monitor-wireless/index.html">Video Transmitter</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Support &amp; Accessories <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Support &amp; Accessories</p><a href="../../products/support-accessories/index.html">Tripod</a><a href="../../products/support-accessories/index.html">Gimbal</a><a href="../../products/support-accessories/index.html">Camera Cage</a><a href="../../products/support-accessories/index.html">Battery</a><a href="../../products/support-accessories/index.html">Memory Card</a></div></div></div>
+				<div class="nav-dropdown"><button class="main-nav__link" type="button" aria-expanded="false">Services <span aria-hidden="true">⌄</span></button><div class="mega-menu"><div><p class="mega-menu__title">Production Services</p><a href="../../pages/services/index.html">Camera Rental</a><a href="../../pages/services/index.html">Production Equipment Rental</a><a href="../../pages/services/index.html">Event Documentation</a><a href="../../pages/services/index.html">Corporate Production</a><a href="../../pages/services/index.html">Film &amp; Commercial Production</a></div></div></div>
+			</div>
+		</nav>
+	</header>
+
+	<main class="request-main" id="request-content">
+		<div class="container">
+			<header class="cart-header">
+				<p class="eyebrow">CUSTOMER AREA / RENTAL REQUEST</p>
+				<h1 data-i18n="request_page_title">Pengajuan Rental</h1>
+				<p data-i18n="request_page_subtitle">Periksa kembali detail pemesanan peralatan Anda sebelum mengirimkan pengajuan sewa.</p>
+			</header>
+
+			<!-- Submission Success Panel -->
+			<div class="request-success-panel" id="request-success-panel" hidden>
+				<div class="request-success-icon" aria-hidden="true">✓</div>
+				<p class="eyebrow">PENGIRIMAN BERHASIL</p>
+				<h2 data-i18n="request_success_title">Permintaan Rental Berhasil Dikirim!</h2>
+				<p data-i18n="request_success_subtitle">Terima kasih. Permintaan sewa peralatan Anda telah terdaftar dan segera ditinjau oleh tim Framehouse Rentals.</p>
+				<div>
+					<span class="request-badge-status" id="success-status-badge">Status: Request Submitted</span>
+				</div>
+				<p style="color:var(--gray-500); font-size: .85rem; margin-bottom: 24px;">
+					ID Rental: <strong id="success-request-id" style="color:var(--navy-900);">#FR-0025</strong>
+				</p>
+				<div class="button-group" style="justify-content:center;">
+					<a class="button button--primary" href="../dashboard.html" data-i18n="btn_view_dashboard">Lihat di Dashboard <span>→</span></a>
+					<a class="button button--outline" style="color:var(--navy-900); border-color:var(--line-light);" href="../rental-history.html" data-i18n="btn_view_history">Lihat Riwayat Rental</a>
+				</div>
+			</div>
+
+			<!-- Review & Submit Form Layout -->
+			<div class="request-layout" id="request-form-layout">
+				<div class="request-content-area">
+					<!-- Equipment Table Card -->
+					<section class="request-card">
+						<h2 data-i18n="review_equipment_title">Peralatan yang Disewa</h2>
+						<div class="table-wrap">
+							<table class="request-items-table">
+								<thead>
+									<tr>
+										<th data-i18n="th_equipment">Equipment</th>
+										<th data-i18n="th_category">Kategori</th>
+										<th data-i18n="th_daily_price">Harga / Hari</th>
+										<th data-i18n="th_quantity">Qty</th>
+										<th data-i18n="th_subtotal">Subtotal</th>
+									</tr>
+								</thead>
+								<tbody id="request-items-tbody">
+									<!-- Dynamic items -->
+								</tbody>
+							</table>
+						</div>
+					</section>
+
+					<!-- Rental & Fulfillment Details -->
+					<section class="request-card">
+						<h2 data-i18n="review_details_title">Rincian Sewa &amp; Pengambilan</h2>
+						<div class="request-details-grid">
+							<div class="request-detail-box">
+								<small data-i18n="label_rental_dates">Periode Rental</small>
+								<strong id="detail-dates-text">-</strong>
+								<span id="detail-duration-pill" style="font-size:.75rem; color:var(--blue-600); font-weight:700;">-</span>
+							</div>
+							<div class="request-detail-box">
+								<small data-i18n="label_fulfillment_method">Metode Pengambilan</small>
+								<strong id="detail-fulfillment-text">-</strong>
+								<p id="detail-address-text" style="font-size:.78rem; color:var(--gray-500); margin-top:4px;"></p>
+							</div>
+						</div>
+					</section>
+
+					<!-- Customer Information Card -->
+					<section class="request-card">
+						<h2 data-i18n="review_customer_title">Informasi Penyewa</h2>
+						<div class="request-details-grid">
+							<div class="request-detail-box">
+								<small data-i18n="label_customer_name">Nama Penyewa</small>
+								<strong id="customer-name-text">Simon Veres Sianturi</strong>
+								<span style="font-size:.72rem; color:var(--gray-500);">Akun Customer Terverifikasi</span>
+							</div>
+							<div class="request-detail-box">
+								<small data-i18n="label_customer_contact">Kontak</small>
+								<strong id="customer-email-text">customer@example.com</strong>
+								<span id="customer-phone-text" style="font-size:.75rem; color:var(--gray-500);">08xxxxxxxxxx</span>
+							</div>
+						</div>
+						<div class="request-detail-box" style="margin-top:16px;">
+							<small data-i18n="label_notes">Catatan Tambahan</small>
+							<p id="detail-notes-text" style="font-size:.82rem; color:var(--gray-700); font-style:italic;">-</p>
+						</div>
+					</section>
+				</div>
+
+				<!-- Summary Card & Submission -->
+				<aside class="request-summary-sidebar">
+					<div class="cart-summary-card">
+						<h3 data-i18n="summary_review_title">Ringkasan Pengajuan</h3>
+						<dl class="summary-rows">
+							<div class="summary-row">
+								<dt data-i18n="summary_total_equipment">Jumlah Unit</dt>
+								<dd id="req-summary-equipment">0 Unit</dd>
+							</div>
+							<div class="summary-row">
+								<dt data-i18n="summary_duration">Durasi</dt>
+								<dd id="req-summary-duration">0 hari</dd>
+							</div>
+							<div class="summary-row">
+								<dt data-i18n="summary_fulfillment">Pengambilan</dt>
+								<dd id="req-summary-fulfillment">Pickup</dd>
+							</div>
+							<div class="summary-row summary-row--total">
+								<dt data-i18n="summary_estimated_total">Total Estimasi</dt>
+								<dd id="req-summary-total">Rp0</dd>
+							</div>
+						</dl>
+						<button class="button button--primary checkout-btn" id="submit-rental-request-btn" type="button">
+							<span data-i18n="btn_submit_request">Kirim Permintaan Rental</span> <span>→</span>
+						</button>
+						<a class="button button--outline" style="color:var(--navy-900); border-color:var(--line-light); width:100%; margin-top:8px;" href="../rental-cart/index.html" data-i18n="btn_back_to_cart">
+							<span>←</span> <span data-i18n="btn_back_to_cart_text">Ubah Peralatan</span>
+						</a>
+						<p class="summary-helper-note" data-i18n="request_helper_note">
+							Status awal permintaan adalah "Request Submitted". Admin akan menghubungi Anda untuk konfirmasi jadwal dan pengambilan.
+						</p>
+					</div>
+				</aside>
+			</div>
+		</div>
+	</main>
+
+	<footer class="site-footer">
+		<div class="container footer-main">
+			<div class="footer-brand">
+				<a class="brand brand--footer" href="../../index.html">
+					<span class="brand__mark" aria-hidden="true">F</span>
+					<span><strong>FRAMEHOUSE</strong><small>RENTAL CO.</small></span>
+				</a>
+				<p>Professional equipment for every story.</p>
+			</div>
+			<div class="footer-column">
+				<h3>Company</h3>
+				<a href="../../pages/about/index.html">About Us</a>
+				<a href="../../pages/services/index.html">Services</a>
+				<a href="../../pages/portfolio/index.html">Portfolio</a>
+				<a href="../../pages/contact/index.html">Contact</a>
+			</div>
+			<div class="footer-column">
+				<h3>Equipment</h3>
+				<a href="../../products/camera/index.html">Camera</a>
+				<a href="../../products/lens/index.html">Lens</a>
+				<a href="../../products/lighting/index.html">Lighting</a>
+				<a href="../../products/audio/index.html">Audio</a>
+				<a href="../../products/monitor-wireless/index.html">Monitor &amp; Wireless</a>
+				<a href="../../products/support-accessories/index.html">Accessories</a>
+			</div>
+			<div class="footer-column">
+				<h3>Customer</h3>
+				<a href="../login.html">Login</a>
+				<a href="../register/index.html">Register</a>
+				<a href="../rental-cart/index.html">Rental List</a>
+				<a href="../rental-history.html">Rental History</a>
+				<a href="../../pages/faq/index.html">FAQ</a>
+			</div>
+			<div class="footer-column footer-contact">
+				<h3>Contact</h3>
+				<p>WhatsApp: +62 XXX XXXX XXXX</p>
+				<p>info@example.com</p>
+				<p>Jakarta, Indonesia</p>
+			</div>
+		</div>
+		<div class="container footer-bottom">
+			<span>© 2026 Framehouse Rental Co. Demo website.</span>
+			<span>All rights reserved.</span>
+		</div>
+	</footer>
+
+	<!-- Rental Assistant Chatbot -->
+	<div class="chatbot" data-chatbot>
+		<button class="chatbot__launcher" type="button" data-chat-toggle aria-expanded="false" aria-controls="rental-chat">
+			<span class="chatbot__launcher-icon" aria-hidden="true">⌁</span>
+			<span class="chatbot__launcher-label">Chat with us</span>
+		</button>
+		<section class="chat-window" id="rental-chat" aria-label="Rental Assistant" hidden>
+			<header class="chat-window__header">
+				<span class="chat-avatar" aria-hidden="true">F</span>
+				<div><strong>Rental Assistant</strong><small>Online · Ready to help</small></div>
+				<button type="button" class="chat-window__close" data-chat-close aria-label="Close chat">×</button>
+			</header>
+			<div class="chat-window__messages" data-chat-messages aria-live="polite"></div>
+			<div class="chat-window__quick" data-chat-quick aria-label="Quick suggestions"></div>
+			<form class="chat-window__form" data-chat-form>
+				<label class="sr-only" for="chat-message">Type a message</label>
+				<input id="chat-message" type="text" data-chat-input autocomplete="off" placeholder="Type a message...">
+				<button type="submit" aria-label="Send message">↑</button>
+			</form>
+		</section>
+	</div>
+
+	<!-- Scripts -->
+	<script src="../../js/navigation.js"></script>
+	<script src="../../js/search.js"></script>
+	<script src="../../js/i18n.js"></script>
+	<script src="../../js/chatbot.js"></script>
+	<script src="../../js/products/product-data.js"></script>
+	<script src="../../js/auth/auth.js"></script>
+	<script src="../../js/customer/cart.js"></script>
+
+	<!-- Rental Request Script -->
+	<script>
+		(() => {
+			const formLayout = document.getElementById('request-form-layout');
+			const successPanel = document.getElementById('request-success-panel');
+			const successIdText = document.getElementById('success-request-id');
+			const tbody = document.getElementById('request-items-tbody');
+
+			const datesText = document.getElementById('detail-dates-text');
+			const durationPill = document.getElementById('detail-duration-pill');
+			const fulfillmentText = document.getElementById('detail-fulfillment-text');
+			const addressText = document.getElementById('detail-address-text');
+			const notesText = document.getElementById('detail-notes-text');
+
+			const customerName = document.getElementById('customer-name-text');
+			const customerEmail = document.getElementById('customer-email-text');
+			const customerPhone = document.getElementById('customer-phone-text');
+
+			const summaryEquipment = document.getElementById('req-summary-equipment');
+			const summaryDuration = document.getElementById('req-summary-duration');
+			const summaryFulfillment = document.getElementById('req-summary-fulfillment');
+			const summaryTotal = document.getElementById('req-summary-total');
+			const submitBtn = document.getElementById('submit-rental-request-btn');
+
+			function lang() {
+				return window.siteLanguage || localStorage.getItem('framehouse-language') || 'id';
+			}
+
+			function formatRupiah(num) {
+				return 'Rp' + Math.round(Number(num) || 0).toLocaleString('id-ID');
+			}
+
+			const cart = window.CameraCart ? window.CameraCart.getCart() : [];
+			if (cart.length === 0) {
+				// No items to request, redirect to cart
+				window.location.href = '../rental-cart/index.html';
+				return;
+			}
+
+			// Read pending checkout details from sessionStorage
+			let details = {};
+			try {
+				details = JSON.parse(sessionStorage.getItem('pendingRentalDetails')) || {};
+			} catch (e) {
+				details = {};
+			}
+
+			const startDate = details.rentalStart || cart[0]?.rentalStart || new Date().toISOString().split('T')[0];
+			const returnDate = details.rentalEnd || cart[0]?.rentalEnd || new Date(Date.now() + 3*86400000).toISOString().split('T')[0];
+			const durationDays = details.durationDays || 4;
+			const fulfillmentMethod = details.fulfillmentMethod || 'Pickup di Lokasi';
+			const deliveryAddress = details.deliveryAddress || '';
+			const notes = details.notes || '';
+
+			// Read user info from CameraAuth or default
+			const user = window.CameraAuth ? window.CameraAuth.getCurrentUser() : null;
+			const clientName = user?.name || 'Simon Veres Sianturi';
+			const clientEmail = user?.email || 'customer@example.com';
+			const clientPhone = user?.whatsapp || '08xxxxxxxxxx';
+			const customerId = user?.customerId || 'CUST-001';
+
+			customerName.textContent = clientName;
+			customerEmail.textContent = clientEmail;
+			customerPhone.textContent = clientPhone;
+
+			const isEn = lang() === 'en';
+			const durLabel = `${durationDays} ${isEn ? (durationDays === 1 ? 'day' : 'days') : 'hari'}`;
+
+			datesText.textContent = `${startDate} — ${returnDate}`;
+			durationPill.textContent = durLabel;
+			fulfillmentText.textContent = fulfillmentMethod;
+			if (fulfillmentMethod === 'Delivery' && deliveryAddress) {
+				addressText.textContent = `Alamat: ${deliveryAddress}`;
+			} else {
+				addressText.textContent = isEn ? 'Pickup at operational office' : 'Ambil di kantor operasional';
+			}
+			notesText.textContent = notes || (isEn ? 'None' : 'Tidak ada catatan tambahan.');
+
+			// Render items
+			tbody.innerHTML = '';
+			let totalQty = 0;
+			let grandTotal = 0;
+
+			cart.forEach((item) => {
+				totalQty += item.quantity;
+				const sub = item.dailyPrice * item.quantity * durationDays;
+				grandTotal += sub;
+
+				const tr = document.createElement('tr');
+				tr.innerHTML = `
+					<td><strong>${item.name}</strong><br><small style="color:var(--gray-500);">${item.brand}</small></td>
+					<td>${item.category}</td>
+					<td>${formatRupiah(item.dailyPrice)}</td>
+					<td><strong>${item.quantity}</strong></td>
+					<td><strong>${formatRupiah(sub)}</strong></td>
+				`;
+				tbody.appendChild(tr);
+			});
+
+			summaryEquipment.textContent = `${totalQty} ${isEn ? 'Units' : 'Unit'}`;
+			summaryDuration.textContent = durLabel;
+			summaryFulfillment.textContent = fulfillmentMethod;
+			summaryTotal.textContent = formatRupiah(grandTotal);
+
+			// Submission handler
+			submitBtn.addEventListener('click', () => {
+				const reqNum = Math.floor(1000 + Math.random() * 9000);
+				const requestId = `#FR-00${reqNum.toString().slice(0, 2)}`;
+
+				const newRequest = {
+					id: requestId,
+					customerId: customerId,
+					customerName: clientName,
+					customerEmail: clientEmail,
+					customerPhone: clientPhone,
+					items: cart.map((i) => ({
+						productId: i.productId,
+						name: i.name,
+						category: i.category,
+						brand: i.brand,
+						dailyPrice: i.dailyPrice,
+						quantity: i.quantity,
+						subtotal: i.dailyPrice * i.quantity * durationDays
+					})),
+					rentalStart: startDate,
+					rentalEnd: returnDate,
+					duration: durLabel,
+					fulfillmentMethod: fulfillmentMethod,
+					deliveryAddress: deliveryAddress,
+					notes: notes,
+					estimatedTotal: formatRupiah(grandTotal),
+					status: 'Request Submitted',
+					createdAt: new Date().toLocaleDateString('id-ID', { day: '2-digit', month: 'short', year: 'numeric' })
+				};
+
+				// Store into cameraRentalRequests
+				let allRequests = [];
+				try {
+					allRequests = JSON.parse(localStorage.getItem('cameraRentalRequests') || '[]');
+				} catch (e) {
+					allRequests = [];
+				}
+				allRequests.unshift(newRequest);
+				localStorage.setItem('cameraRentalRequests', JSON.stringify(allRequests));
+
+				// Clear cart
+				window.CameraCart?.clearCart();
+				sessionStorage.removeItem('pendingRentalDetails');
+
+				// Show success state
+				successIdText.textContent = requestId;
+				formLayout.style.display = 'none';
+				successPanel.hidden = false;
+				window.scrollTo({ top: 0, behavior: 'smooth' });
+
+				window.CameraCart?.showToast(
+					isEn ? 'Rental request submitted successfully!' : 'Permintaan rental berhasil dikirim!',
+					false
+				);
+			});
+		})();
+	</script>
+</body>
+</html>
